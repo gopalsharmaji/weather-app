@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+    }
+
+    body {
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/043/408/893/small/an-approaching-thunderstorm-in-a-flowering-rapeseed-field-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* SEARCH BOX */
+
+    .search-box {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(234, 216, 216, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 40px;
+      padding: 10px 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
+    }
+
+    .search-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .search-box input {
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      width: 250px;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+    }
+
+    .search-box input::placeholder {
+      color: #f0f0f0;
+    }
+
+    .search-box button {
+      background: rgba(255,255,255,0.9);
+      border: none;
+      padding: 10px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 18px;
+    }
+
+    .search-box button:hover {
+      background: white;
+      transform: scale(1.1);
+    }
+
+    /* WEATHER Card */
+
+
+    .weather-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 80px 120px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+      transform: rotateY(10deg) rotateX(5deg);
+      transition: all 0.6s ease;
+    }
+
+
+
+    .weather-container:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+
+
+
+    
+    .city {
+      font-size: 70px;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+
+
+
+    .date {
+      font-size: 22px;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    .temperature {
+      font-size: 90px;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+    .range {
+      font-size: 26px;
+      margin-top: 15px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search city...">
+    <button id="search-button">🔍</button>
+  </div>
+
+  <div class="weather-container">
+    <div class="city">Jaipur</div>
+    <div class="date">03-Nov-2025</div>
+    <div class="temperature">21°C</div>
+    <div class="range">20°C / 30°C</div>  
+  </div>
+
+
+  <script  src="weather.js"></script>
+
+</body>
+</html>

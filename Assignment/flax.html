@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: serif;
+      background-color: rgb(141, 245, 240);
+      
+    }
+
+    nav {
+      background: #222;
+      padding: 15px;
+      display: flex;
+      justify-content: end;
+      gap: 40px;
+         
+
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .card {
+      flex: 1;
+      margin: 5px;
+      padding: 20px;
+      background: lightgray;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 30px;
+    }
+
+  
+    .center-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh; 
+    }
+
+    .box {
+      background: blue;
+      color: white;
+      padding: 20px 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+  <div class="cards">
+    <div class="card">cart 1</div>
+    <div class="card">cart 2</div>
+    <div class="card">cart 3</div>
+  </div>
+
+
+  <div class="center-box">
+    <div class="box">Hello, Flexbox!</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: lightblue;
+}
+
+.navbar {
+  background-color: #323131;
+  padding: 15px;
+ 
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right; 
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size:20px;
+ 
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+/* card  */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  flex-wrap: wrap;  /* responsive ke liye */
+}
+
+.card {
+  background-color: #feafaf;
+  padding: 30px;
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 200px; /* responsive card size */
+
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+
+}
+/* HEllo box*/
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; 
+  
+ 
+}
+
+.box {
+  background-color: navy;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+}
